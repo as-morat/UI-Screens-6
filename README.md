@@ -1,17 +1,74 @@
-# learn_local_db
+# 📌 learn_local_db
+A simple and clean Flutter project demonstrating **Local Database CRUD** operations using **SQFlite**.
 
-A new Flutter project.
+---
 
-## Getting Started
+## 🚀 Features
+- Add new task
+- Update task status (complete/incomplete)
+- Edit task content
+- Delete single task
+- Delete all tasks
+- Beautiful UI with custom AppBar
+- Local persistence using SQFlite
+- Fully structured MVC-style architecture
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🗄️ Tech Stack
+- **Flutter**
+- **SQFlite**
+- **Path Provider**
+- **Local SQLite Database**
+- **Reusable Widgets**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# UI-Screens-6
+## 📂 Project Structure  
+```sh
+lib/
+├── models/
+│ └── task.dart
+├── services/
+│ └── database_services.dart
+├── screens/
+│ └── home_page.dart
+└── main.dart
+```
+---
+
+## 🛠️ How It Works
+
+### ✔ Create Task
+Stores text + status (`0 = pending`, `1 = completed`)
+
+### ✔ Read Tasks
+Loads tasks from local SQLite database.
+
+### ✔ Update Task
+Toggle task status (completed / not completed)
+
+### ✔ Delete Task / Delete All
+Safely removes data from the database.
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+  <img src="img.png" width="150">
+  <img src="img_1.png" width="150">
+  <img src="img_2.png" width="150">
+  <img src="img_3.png" width="150">
+  <img src="img_4.png" width="150">
+</div>
+
+---
+
+
+## Install Packages
+```sh
+flutter pub add path
+flutter pub add sqflite
+flutter pub add google_fonts
+```
